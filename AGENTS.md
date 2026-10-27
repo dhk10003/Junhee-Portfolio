@@ -5,7 +5,7 @@
 따뜻한 아이보리, 베이지, 우드, 차분한 올리브와 큰 사진, 정교한 세리프 타이포를 유지한다.
 
 - 독립 저장소에서는 npm ci 후 npm run watch로 실행한다. scripts/build.cjs가 사이트 전용 빌드다. 기존 Templater 프로젝트 루트에서 npm run watch -- --campaign Junhee-Portfolio로 작업한다. pages/의 HTML과 assets/의 SCSS·JS·이미지를 수정하며 dist/는 직접 수정하지 않는다.
-- 첫 화면 인물 사진은 AI 콘셉트이며 실제 강사 사진으로 오해하게 표현하지 않는다. Meet Junhee는 사용자가 제공한 실제 사진이다. junhee-portrait-source.png는 원본 스크린샷이며 SVG viewBox로 사진 영역(0,177,1179,1769)만 표시한다.
+- 첫 화면은 사람이 없는 AI 스튜디오 콘셉트 이미지(hero-reformer-window.png)이며 실제 수업 공간 사진으로 오해하게 표현하지 않는다. Meet Junhee는 사용자가 제공한 실제 사진이다. junhee-portrait-source.png는 원본 스크린샷이며 SVG viewBox로 사진 영역(0,177,1179,1769)만 표시한다.
 - 이름, 자격, 경력, 후기, 성과 수치는 제공받기 전까지 만들어내지 않는다.
 - 실제 연락처가 없으면 문의 전송이 완료된 것처럼 표시하지 않는다.
 - 모바일 반응형, 키보드 탐색, 모션 감소 설정을 유지한다.
