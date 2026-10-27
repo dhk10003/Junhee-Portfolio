@@ -10,13 +10,10 @@
   overflow: hidden;
   background: #e4dac8;
 }
-.intro-image img {
-  width: 190%;
-  max-width: none;
+.intro-image .junhee-portrait {
+  display: block;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: right center;
-  margin-left: -90%;
 }
 .intro-image figcaption {
   position: absolute;

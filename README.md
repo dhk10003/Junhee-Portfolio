@@ -54,7 +54,7 @@ HTML은 Templater의 `@@include('../includes/about.html')` 문법을 사용합�
 
 ## 자료 관리
 
-현재 첫 화면과 소개 사진은 AI 콘셉트입니다. 실제 프로필·수업 사진으로 교체할 수 있습니다. 학력·자격·이름 표기와 개인정보 처리 기준은 AGENTS.md를 참고합니다. 증명서 원본을 assets에 추가하지 않습니다. 기존 프로젝트의 전체 사본은 로컬 부모 폴더의 `_archive/`에 보관하며 Git에 포함하지 않습니다.
+첫 화면은 AI 콘셉트 이미지이며, Meet Junhee 소개 영역은 제공받은 실제 사진입니다. `junhee-portrait-source.png`의 휴대폰 UI는 SVG viewBox로 화면에서 제외하며, 얼굴과 사진 내용은 변형하지 않습니다. 학력·자격·이름 표기와 개인정보 처리 기준은 AGENTS.md를 참고합니다. 증명서 원본을 assets에 추가하지 않습니다. 기존 프로젝트의 전체 사본은 로컬 부모 폴더의 `_archive/`에 보관하며 Git에 포함하지 않습니다.
 
 ## GitHub Pages 배포
 
