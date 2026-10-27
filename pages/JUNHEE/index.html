@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <meta
+      name="description"
+      content="임준희 Junhee Lim — 메릴랜드 엘리콧시티의 퍼스널 트레이너 · 필라테스 지도자. 청소년부터 시니어까지, 개인의 체력과 목표에 맞는 운동을 지도합니다."
+    />
+    <title>Junhee Lim — Personal Training & Pilates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+KR:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#about">본문으로 이동</a>
+    <header class="header">
+      <a class="wordmark" href="#home" aria-label="Junhee Lim 처음으로"
+        >JUNHEE LIM<span>PERSONAL TRAINING & PILATES</span></a
+      >
+      <nav class="desktop-nav" aria-label="주 메뉴">
+        <a href="#about">About</a><a href="#practice">Practice</a
+        ><a href="#education">Education</a><a href="#experience">Experience</a
+        ><a href="#contact">Contact ↗</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        Menu <span aria-hidden="true">＋</span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
+        <a href="#about">About · 소개</a
+        ><a href="#practice">Practice · 지도 분야</a
+        ><a href="#education">Education · 교육과 자격</a
+        ><a href="#experience">Experience · 경력</a
+        ><a href="#contact">Contact · 문의 ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      @@include('../includes/about.html')
+      @@include('../includes/practice.html')
+      @@include('../includes/credentials.html')
+      @@include('../includes/contact.html')
+    </main>
+    <footer>
+      <a class="wordmark" href="#home">JUNHEE LIM</a>
+      <p>© <span id="year">2026</span> Junhee Lim</p>
+      <span>첫 화면과 소개 인물 이미지는 AI 콘셉트 이미지입니다.</span
+      ><a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+    <dialog
+      id="document-dialog"
+      class="document-dialog"
+      aria-labelledby="document-title"
+      aria-describedby="document-note"
+    >
+      <div class="document-header">
+        <div>
+          <p class="eyebrow">EDUCATION / DOCUMENT</p>
+          <h2 id="document-title">증빙 문서</h2>
+        </div>
+        <button
+          type="button"
+          class="document-close"
+          aria-label="문서 닫기"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <div class="document-toolbar">
+        <button type="button" id="document-zoom" aria-pressed="false">
+          원본 크기로 확대</button
+        ><a
+          id="document-open"
+          href="assets/images/credentials/degree-public.webp?v=2"
+          target="_blank"
+          rel="noopener"
+          >새 탭에서 보기 ↗</a
+        >
+      </div>
+      <div
+        class="document-stage"
+        tabindex="0"
+        aria-label="문서 이미지. 확대 후 스크롤하여 읽을 수 있습니다."
+      >
+        <img id="document-image" alt="" hidden />
+        <p id="document-loading" role="status">문서를 불러오는 중입니다.</p>
+      </div>
+      <p class="document-note" id="document-note">
+        발급 당시 성명은 원문 그대로입니다. 주민등록번호·생년월일 등
+        개인식별정보는 가렸습니다.
+      </p>
+    </dialog>
+  </body>
+</html>

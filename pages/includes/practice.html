@@ -1,0 +1,151 @@
+<section
+  class="practice section-wrap"
+  id="practice"
+  aria-labelledby="practice-title"
+>
+  <div class="section-marker reveal">
+    <span>02 / YOUR PRACTICE</span><span>내 몸과 목표에 맞는 운동</span>
+  </div>
+  <div class="section-heading reveal">
+    <h2 id="practice-title">Your body.<br /><em>Your own pace.</em></h2>
+    <p>
+      체력과 생활 습관, 운동 목표를 살펴<br />꾸준히 실천할 수 있는 운동을 함께
+      찾습니다.
+    </p>
+  </div>
+  <div class="practice-tabs reveal" role="tablist" aria-label="지도 분야">
+    <button
+      id="tab-pilates"
+      role="tab"
+      aria-selected="true"
+      aria-controls="practice-panel"
+      data-practice="pilates"
+    >
+      <span>01</span><strong>Pilates</strong><small>필라테스</small>
+    </button>
+    <button
+      id="tab-training"
+      role="tab"
+      aria-selected="false"
+      aria-controls="practice-panel"
+      data-practice="training"
+      tabindex="-1"
+    >
+      <span>02</span><strong>Personal training</strong
+      ><small>퍼스널 트레이닝</small>
+    </button>
+    <button
+      id="tab-lifelong"
+      role="tab"
+      aria-selected="false"
+      aria-controls="practice-panel"
+      data-practice="lifelong"
+      tabindex="-1"
+    >
+      <span>03</span><strong>Every stage</strong><small>연령에 맞는 운동</small>
+    </button>
+  </div>
+  <div
+    class="practice-panel reveal"
+    id="practice-panel"
+    role="tabpanel"
+    aria-labelledby="tab-pilates"
+    tabindex="0"
+  >
+    <div class="practice-art" data-mode="pilates">
+      <div class="movement-scene" aria-hidden="true">
+        <svg class="movement-visual visual-pilates" viewBox="0 0 400 250">
+          <path class="guide-line" d="M200 20V230 M60 125H340" />
+          <ellipse
+            class="breath-ring outer"
+            cx="200"
+            cy="125"
+            rx="108"
+            ry="88"
+          />
+          <ellipse
+            class="breath-ring inner"
+            cx="200"
+            cy="125"
+            rx="76"
+            ry="62"
+          />
+          <path class="spine-line" d="M200 60C180 90 220 154 200 190" />
+          <circle class="anchor-dot" cx="200" cy="60" r="5" />
+          <circle class="anchor-dot" cx="200" cy="125" r="7" />
+          <circle class="anchor-dot" cx="200" cy="190" r="5" />
+          <text x="315" y="57">BREATHE</text>
+          <text x="315" y="203">ALIGN</text>
+        </svg>
+        <svg class="movement-visual visual-training" viewBox="0 0 400 250">
+          <path class="guide-line" d="M45 211H355" />
+          <g class="strength-step step-one">
+            <rect x="65" y="150" width="64" height="60" rx="32" />
+            <path d="M97 170V190 M87 180H107" />
+          </g>
+          <g class="strength-step step-two">
+            <rect x="168" y="105" width="64" height="105" rx="32" />
+            <path d="M200 125V145 M190 135H210" />
+          </g>
+          <g class="strength-step step-three">
+            <rect x="271" y="60" width="64" height="150" rx="32" />
+            <path d="M303 80V100 M293 90H313" />
+          </g>
+          <path class="progress-path" d="M97 128Q145 68 200 80T303 34" />
+          <text x="97" y="237" text-anchor="middle">LEARN</text>
+          <text x="200" y="237" text-anchor="middle">BUILD</text>
+          <text x="303" y="237" text-anchor="middle">REPEAT</text>
+        </svg>
+        <svg class="movement-visual visual-lifelong" viewBox="0 0 400 250">
+          <path
+            class="pace-track"
+            id="pace-path"
+            d="M48 162C95 162 83 65 151 65S215 190 272 190S309 98 353 98"
+          />
+          <circle class="pace-node" cx="48" cy="162" r="9" />
+          <circle class="pace-node" cx="151" cy="65" r="9" />
+          <circle class="pace-node" cx="272" cy="190" r="9" />
+          <circle class="pace-traveler" r="5" />
+          <text x="48" y="193" text-anchor="middle">YOUR BODY</text>
+          <text x="151" y="36" text-anchor="middle">YOUR PACE</text>
+          <text x="272" y="223" text-anchor="middle">YOUR WAY</text>
+        </svg>
+      </div>
+      <div class="visual-description">
+        <span class="visual-index">01 / THE METHOD</span>
+        <p id="visual-message">호흡을 따라, 중심을 느끼며.</p>
+        <button
+          class="motion-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="그래픽 움직임 일시 정지"
+        >
+          움직임 멈추기 <span aria-hidden="true">Ⅱ</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="practice-copy">
+      <p class="eyebrow" id="practice-label">AWARENESS IN EVERY MOVEMENT</p>
+      <h3 id="practice-heading">호흡부터 자세까지, 차근차근.</h3>
+      <p id="practice-copy">
+        호흡과 자세를 살피며 몸을 안정적으로 움직이는 방법을 익힙니다. 매트와
+        리포머 교육에서 배운 원리를 바탕으로, 각자의 체력에 맞춰 동작을
+        지도합니다.
+      </p>
+      <ul class="focus-list" id="practice-focus">
+        <li>코어 안정성</li>
+        <li>바른 자세 익히기</li>
+        <li>호흡과 동작의 연결</li>
+      </ul>
+      <a class="text-link" href="#contact"
+        >수업 상담하기 <span aria-hidden="true">↗</span></a
+      >
+    </div>
+  </div>
+  <div class="approach-line reveal">
+    <span>OBSERVE <small>몸 상태와 목표를 살피고</small></span
+    ><span>GUIDE <small>눈높이에 맞게 설명하고</small></span
+    ><span>CONTINUE <small>꾸준히 실천하도록 돕습니다</small></span>
+  </div>
+</section>

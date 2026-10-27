@@ -1,0 +1,30 @@
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  *:before {
+    animation: none !important;
+    transition: none !important;
+  }
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .js-motion .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .document-thumb {
+    transition: none;
+  }
+  .motion-toggle {
+    display: none;
+  }
+  .pace-traveler {
+    offset-distance: 50%;
+  }
+}

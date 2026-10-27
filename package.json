@@ -1,0 +1,15 @@
+{
+  "name": "junhee-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "watch": "node scripts/build.cjs --watch"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "chokidar": "^4.0.3",
+    "sass": "^1.99.0"
+  }
+}

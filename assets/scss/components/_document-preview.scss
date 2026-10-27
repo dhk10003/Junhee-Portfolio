@@ -1,0 +1,134 @@
+.academic-evidence {
+  border-top: 1px solid #cbc6b6;
+  margin-top: 24px;
+  padding-top: 23px;
+}
+.document-preview {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  min-width: 0;
+}
+.document-thumb {
+  flex: 0 0 79px;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 3px 12px #3c32251a;
+  border: 1px solid #d6d0c2;
+  transform: rotate(-2deg);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.document-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.document-preview:hover .document-thumb {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 0 6px 15px #3c322528;
+}
+.document-preview-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+  flex: 1;
+}
+.document-preview-copy small {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: var(--olive);
+  line-height: 1.6;
+}
+.document-preview-copy strong {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.document-preview-copy > span {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.document-preview-copy i {
+  font-style: normal;
+  font-size: 19px;
+  color: var(--olive);
+}
+.document-text-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 18px 0 10px;
+  margin-top: 13px;
+  border-top: 1px solid #cbc6b6;
+}
+.document-text-link > span {
+  font-size: 17px;
+}
+.document-text-link:hover {
+  color: var(--olive);
+}
+.document-preview:hover strong {
+  color: var(--olive);
+}
+.academic-evidence .document-privacy-note {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+.qualification .document-privacy-note {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+.certificate-preview {
+  margin-top: 23px;
+  padding: 19px 20px;
+  background: #ece8dc;
+}
+.certificate-preview .document-thumb {
+  flex-basis: 69px;
+  transform: rotate(2deg);
+}
+.certificate-preview:hover .document-thumb {
+  transform: rotate(0deg) translateY(-3px);
+}
+@media (max-width: 680px) {
+  .document-preview {
+    gap: 17px;
+  }
+  .document-thumb {
+    flex-basis: 70px;
+  }
+  .document-preview-copy strong {
+    font-size: 16px;
+  }
+  .document-preview-copy > span {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .document-preview-copy small {
+    font-size: 11px;
+  }
+  .certificate-preview {
+    padding: 17px;
+  }
+}
+.document-preview-copy small {
+  letter-spacing: 0.08em;
+}
+.document-preview-copy > span {
+  flex-wrap: wrap;
+  row-gap: 4px;
+}

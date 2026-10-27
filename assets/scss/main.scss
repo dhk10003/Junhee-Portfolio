@@ -1,0 +1,18 @@
+// Shared styles first, component styles next, reduced motion last.
+@use "base/tokens";
+@use "base/global";
+@use "components/header";
+@use "components/hero";
+@use "components/credentials-strip";
+@use "components/about";
+@use "components/practice";
+@use "components/movement-visual";
+@use "components/education";
+@use "components/experience";
+@use "components/closing";
+@use "components/contact";
+@use "components/footer";
+@use "components/document-preview";
+@use "components/document-dialog";
+@use "base/motion";
+@use "base/reduced-motion";

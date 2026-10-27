@@ -1,0 +1,113 @@
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9%;
+  align-items: center;
+}
+.intro-image {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: #e4dac8;
+}
+.intro-image img {
+  width: 190%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  margin-left: -90%;
+}
+.intro-image figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 13px 16px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #fbf7ec;
+  background: #3c362ba8;
+  line-height: 1.7;
+}
+.intro-copy h2 {
+  font-family: var(--sans);
+  font-size: clamp(30px, 3.2vw, 45px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.5;
+  margin: 20px 0 25px;
+}
+.intro-copy h2 span {
+  color: var(--olive);
+}
+.intro-copy > p:not(.eyebrow):not(.name-line) {
+  font-size: 16px;
+  line-height: 2.15;
+  color: var(--muted);
+  margin: 16px 0;
+  word-break: keep-all;
+}
+.name-line {
+  font-size: 17px;
+  font-weight: 400;
+}
+.name-line span {
+  font-family: var(--serif);
+  font-size: 25px;
+  margin-left: 13px;
+  color: var(--olive);
+}
+.signature {
+  font-family: var(--serif);
+  font-size: 31px;
+  line-height: 1.13;
+  margin: 26px 0;
+  color: var(--olive);
+}
+@media (max-width: 1100px) {
+  .intro-grid {
+    gap: 6%;
+  }
+  .intro-image {
+    height: 570px;
+  }
+}
+@media (max-width: 900px) {
+  .intro-grid {
+    gap: 7%;
+  }
+  .intro-image {
+    height: 610px;
+  }
+  .intro-copy h2 {
+    font-size: 32px;
+  }
+  .intro-copy > p:not(.eyebrow):not(.name-line) {
+    font-size: 14px;
+  }
+}
+@media (max-width: 680px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .intro-image {
+    height: 400px;
+  }
+  .intro-copy h2 {
+    font-size: 35px;
+    line-height: 1.4;
+    margin: 18px 0 22px;
+  }
+  .intro-copy > p:not(.eyebrow):not(.name-line) {
+    font-size: 16px;
+  }
+  .signature {
+    font-size: 30px;
+    margin: 24px 0;
+  }
+}
+.intro-copy h2 {
+  font-weight: 400;
+}

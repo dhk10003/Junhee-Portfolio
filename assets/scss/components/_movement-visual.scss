@@ -1,0 +1,183 @@
+.practice-art {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+@media (max-width: 680px) {
+  .practice-art {
+    height: 220px;
+  }
+}
+.practice-art {
+  height: auto;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: center;
+}
+.movement-scene {
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 400/250;
+  margin: auto;
+  position: relative;
+}
+.movement-visual {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: var(--olive);
+  stroke-width: 1.2;
+}
+.practice-art[data-mode="pilates"] .visual-pilates {
+  display: block;
+}
+.practice-art[data-mode="training"] .visual-training {
+  display: block;
+}
+.practice-art[data-mode="lifelong"] .visual-lifelong {
+  display: block;
+}
+.movement-visual text {
+  stroke: none;
+  fill: var(--muted);
+  font: 10px var(--sans);
+  letter-spacing: 1.2px;
+}
+.guide-line {
+  stroke: #b5b49e;
+  stroke-dasharray: 3 6;
+  stroke-width: 0.7;
+}
+.breath-ring {
+  transform-origin: 200px 125px;
+  animation: breathing 7s ease-in-out infinite;
+  fill: #a7ad7e0c;
+}
+.breath-ring.inner {
+  animation-delay: -0.4s;
+  fill: #a7ad7e15;
+}
+.spine-line {
+  stroke-width: 2;
+}
+.anchor-dot {
+  fill: var(--olive);
+  stroke: none;
+}
+.strength-step rect {
+  fill: #969d7718;
+}
+.strength-step {
+  transform-origin: center 211px;
+  animation: strength-settle 5s ease-in-out infinite;
+}
+.step-two {
+  animation-delay: 0.35s;
+}
+.step-three {
+  animation-delay: 0.7s;
+}
+.progress-path {
+  stroke-dasharray: 4 6;
+  stroke: #909773;
+}
+.pace-track {
+  stroke-width: 1.5;
+}
+.pace-node {
+  fill: #eae6da;
+}
+.pace-traveler {
+  fill: var(--olive);
+  stroke: #eae6da;
+  stroke-width: 2;
+  offset-path: path(
+    "M48 162C95 162 83 65 151 65S215 190 272 190S309 98 353 98"
+  );
+  animation: own-pace 12s ease-in-out infinite;
+}
+.visual-description {
+  border-top: 1px solid #c8c6b5;
+  padding-top: 17px;
+  text-align: left;
+  position: relative;
+}
+.visual-index {
+  font-size: 10px;
+  letter-spacing: 0.17em;
+  color: var(--olive);
+}
+.visual-description p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+  padding-right: 0;
+  color: var(--ink);
+  word-break: keep-all;
+}
+.motion-toggle {
+  display: block;
+  margin-top: 12px;
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  color: var(--muted);
+  font: 11px var(--sans);
+  cursor: pointer;
+}
+.motion-toggle span {
+  margin-left: 12px;
+}
+.motion-paused * {
+  animation-play-state: paused !important;
+}
+@keyframes breathing {
+  0%,
+  100% {
+    transform: scale(0.88);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes strength-settle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-9px);
+  }
+}
+@keyframes own-pace {
+  0%,
+  8% {
+    offset-distance: 0%;
+  }
+  85%,
+  100% {
+    offset-distance: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .practice-art {
+    min-height: 0;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  .movement-scene {
+    max-width: 360px;
+  }
+  .visual-description p {
+    font-size: 14px;
+  }
+}
