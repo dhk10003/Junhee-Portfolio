@@ -2,6 +2,7 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const sass = require('sass');
+const { createHash } = require('node:crypto');
 const root = path.resolve(__dirname, '..');
 const pages = path.join(root, 'pages');
 const dist = path.join(root, 'dist');
@@ -19,9 +20,13 @@ async function render(file, parents = []) {
 }
 
 async function build() {
-  const html = await render(path.join(pages, 'JUNHEE/index.html'));
+  let html = await render(path.join(pages, 'JUNHEE/index.html'));
   const css = sass.compile(path.join(root, 'assets/styles.scss'), { style: 'expanded' }).css;
   const js = await fs.readFile(path.join(root, 'assets/js/main.js'), 'utf8');
+  // Version asset URLs so returning visitors receive updated styles immediately.
+  const version = value => createHash('sha256').update(value).digest('hex').slice(0, 12);
+  html = html.replace('href="css/styles.css"', `href="css/styles.css?v=${version(css)}"`)
+    .replace('src="js/main.js"', `src="js/main.js?v=${version(js)}"`);
   await fs.mkdir(path.join(dist, 'css'), { recursive: true });
   await fs.mkdir(path.join(dist, 'js'), { recursive: true });
   await fs.mkdir(path.join(dist, 'assets'), { recursive: true });
