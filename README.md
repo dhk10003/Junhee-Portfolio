@@ -58,6 +58,6 @@ HTML은 Templater의 `@@include('../includes/about.html')` 문법을 사용합�
 
 ## GitHub Pages 배포
 
-사이트 주소: https://dhk10003.github.io/Junhee-Protfolio/
+사이트 주소: https://dhk10003.github.io/Junhee-Portfolio/
 
 `main`에 push하면 `.github/workflows/pages.yml`이 의존성을 설치하고 `npm run build`로 생성한 `dist/`를 GitHub Pages에 배포합니다. `dist/`는 Git에 올리지 않습니다. 배포 상태는 저장소 Actions에서 확인합니다.
